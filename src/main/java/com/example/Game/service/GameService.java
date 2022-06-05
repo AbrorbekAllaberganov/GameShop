@@ -25,7 +25,8 @@ public class GameService {
             Game game = new Game();
             game.setName(gamePayload.getName());
             game.setDescription(gamePayload.getDescription());
-            game.setUrl(gamePayload.getUrl());
+            game.setVideoUrl(gamePayload.getVideoUrl());
+            game.setTorrentUrl(gamePayload.getTorrentUrl());
             game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
 
             return result.success(gameRepository.save(game));
@@ -40,7 +41,8 @@ public class GameService {
                 Game game =gameFindById(gameId);
                 game.setName(gamePayload.getName());
                 game.setDescription(gamePayload.getDescription());
-                game.setUrl(gamePayload.getUrl());
+                game.setVideoUrl(gamePayload.getVideoUrl());
+                game.setTorrentUrl(gamePayload.getTorrentUrl());
                 game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
 
                 return result.success(gameRepository.save(game));

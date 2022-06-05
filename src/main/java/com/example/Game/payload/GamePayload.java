@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class GamePayload {
     private String name;
     private String description;
-    private String url;
+    private String videoUrl;
+    private String torrentUrl;
     private String hashId;
 }

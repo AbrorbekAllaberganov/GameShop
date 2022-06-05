@@ -28,7 +28,8 @@ public class Game {
 
     private String name;
     private String description;
-    private String url;
+    private String videoUrl;
+    private String torrentUrl;
 
     @OneToOne
     private Attachment attachment;
