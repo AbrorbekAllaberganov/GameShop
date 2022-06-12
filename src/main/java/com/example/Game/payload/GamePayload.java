@@ -12,5 +12,6 @@ public class GamePayload {
     private String description;
     private String videoUrl;
     private String torrentUrl;
-    private String hashId;
+    private String imageUrl;
+//    private String hashId;
 }

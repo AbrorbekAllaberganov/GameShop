@@ -27,7 +27,8 @@ public class GameService {
             game.setDescription(gamePayload.getDescription());
             game.setVideoUrl(gamePayload.getVideoUrl());
             game.setTorrentUrl(gamePayload.getTorrentUrl());
-            game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
+            game.setImageUrl(gamePayload.getImageUrl());
+//            game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
 
             return result.success(gameRepository.save(game));
         } catch (Exception e) {
@@ -43,7 +44,8 @@ public class GameService {
                 game.setDescription(gamePayload.getDescription());
                 game.setVideoUrl(gamePayload.getVideoUrl());
                 game.setTorrentUrl(gamePayload.getTorrentUrl());
-                game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
+                game.setImageUrl(gamePayload.getImageUrl());
+//                game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
 
                 return result.success(gameRepository.save(game));
             }else

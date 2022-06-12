@@ -31,8 +31,9 @@ public class Game {
     private String videoUrl;
     private String torrentUrl;
 
-    @OneToOne
-    private Attachment attachment;
+    private String imageUrl;
+//    @OneToOne
+//    private Attachment attachment;
 
     @CreationTimestamp
     private Date createAt;
