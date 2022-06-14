@@ -28,6 +28,7 @@ public class GameService {
             game.setVideoUrl(gamePayload.getVideoUrl());
             game.setTorrentUrl(gamePayload.getTorrentUrl());
             game.setImageUrl(gamePayload.getImageUrl());
+            game.setGener(gamePayload.getGener());
 //            game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
 
             return result.success(gameRepository.save(game));
@@ -45,6 +46,7 @@ public class GameService {
                 game.setVideoUrl(gamePayload.getVideoUrl());
                 game.setTorrentUrl(gamePayload.getTorrentUrl());
                 game.setImageUrl(gamePayload.getImageUrl());
+                game.setGener(gamePayload.getGener());
 //                game.setAttachment(attachmentService.findByHashId(gamePayload.getHashId()));
 
                 return result.success(gameRepository.save(game));

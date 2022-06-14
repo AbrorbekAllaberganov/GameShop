@@ -32,6 +32,7 @@ public class Game {
     private String torrentUrl;
 
     private String imageUrl;
+    private String gener;
 //    @OneToOne
 //    private Attachment attachment;
 
